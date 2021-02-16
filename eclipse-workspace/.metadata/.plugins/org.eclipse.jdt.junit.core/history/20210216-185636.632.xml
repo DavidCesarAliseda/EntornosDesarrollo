@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BibliotecaTest" project="Biblioteca" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="biblioteca.BibliotecaTest" time="0.0">
+    <testcase name="testBiblioteca" classname="biblioteca.BibliotecaTest" time="0.0"/>
+    <testcase name="testAgregarPublicacion" classname="biblioteca.BibliotecaTest" time="0.0">
+      <failure>junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;2&gt;&#13;
+	at junit.framework.Assert.fail(Assert.java:57)&#13;
+	at junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:78)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:234)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:241)&#13;
+	at junit.framework.TestCase.assertEquals(TestCase.java:384)&#13;
+	at biblioteca.BibliotecaTest.testAgregarPublicacion(BibliotecaTest.java:21)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#13;
+	at junit.framework.TestCase.runTest(TestCase.java:177)&#13;
+	at junit.framework.TestCase.runBare(TestCase.java:142)&#13;
+	at junit.framework.TestResult$1.protect(TestResult.java:122)&#13;
+	at junit.framework.TestResult.runProtected(TestResult.java:142)&#13;
+	at junit.framework.TestResult.run(TestResult.java:125)&#13;
+	at junit.framework.TestCase.run(TestCase.java:130)&#13;
+	at junit.framework.TestSuite.runTest(TestSuite.java:241)&#13;
+	at junit.framework.TestSuite.run(TestSuite.java:236)&#13;
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:90)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

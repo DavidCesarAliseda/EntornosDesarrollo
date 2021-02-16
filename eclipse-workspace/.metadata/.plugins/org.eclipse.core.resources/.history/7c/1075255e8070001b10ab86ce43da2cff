@@ -1,0 +1,24 @@
+package biblioteca;
+import org.junit.Test;
+import junit.framework.TestCase;
+
+public class BibliotecaTest extends TestCase{
+
+	@Test
+	public void testBiblioteca() {
+		Biblioteca b1 = new Biblioteca();
+		assertTrue(b1 instanceof Biblioteca);
+	}
+
+	@Test
+	public void testAgregarPublicacion() {
+		Biblioteca b1 = new Biblioteca();
+		Publicacion l1 = new Publicacion("Prueba", "Prueba1");
+		b1.agregarPublicacion(l1);
+		b1.agregarPublicacion(l1);
+		int resultado = b1.getPublicaciones().size();
+		int esperado = 2;
+		assertEquals(esperado, resultado);
+	}
+	
+}

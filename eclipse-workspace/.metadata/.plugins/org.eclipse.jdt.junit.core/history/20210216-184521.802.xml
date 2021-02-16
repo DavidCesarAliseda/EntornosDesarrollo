@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BibliotecaTest" project="Biblioteca" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="biblioteca.BibliotecaTest" time="0.006">
+    <testcase name="testMostrarCatalogo" classname="biblioteca.BibliotecaTest" time="0.003"/>
+    <testcase name="testBiblioteca" classname="biblioteca.BibliotecaTest" time="0.001"/>
+    <testcase name="testAgregarPublicacion" classname="biblioteca.BibliotecaTest" time="0.002"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,35 @@
+import org.junit.Test;
+
+import examenUd5.Biblioteca;
+import examenUd5.Libro;
+import examenUd5.Publicacion;
+import junit.framework.TestCase;
+
+public class BibliotecaTest extends TestCase{
+
+	@Test
+	public void testBiblioteca() {
+		Biblioteca b1 = new Biblioteca();
+		assertTrue(b1 instanceof Biblioteca);
+	}
+
+	@Test
+	public void testAgregarPublicacion() {
+		Biblioteca b1 = new Biblioteca();
+		Publicacion l1 = new Publicacion("Prueba", "Prueba1");
+		b1.agregarPublicacion(l1);
+		int resultado = b1.getPublicaciones().size();
+		int esperado = 1;
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testMostrarCatalogo() {
+		Biblioteca b1 = new Biblioteca();
+		Publicacion l1 = new Publicacion("Prueba", "Prueba1");
+		b1.agregarPublicacion(l1);
+		
+	}
+
+	
+}

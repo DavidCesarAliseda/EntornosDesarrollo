@@ -1,0 +1,121 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
+import java.awt.Color;
+import java.awt.Font;
+
+public class Ventana1 extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Ventana1 frame = new Ventana1();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Ventana1() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 600, 400);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton Boton0 = new JButton("0");
+		Boton0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		Boton0.setBounds(108, 285, 89, 23);
+		contentPane.add(Boton0);
+		
+		JButton Boton1 = new JButton("1");
+		Boton1.setBounds(108, 252, 89, 23);
+		contentPane.add(Boton1);
+		
+		JButton Boton7 = new JButton("7");
+		Boton7.setBounds(108, 185, 89, 23);
+		contentPane.add(Boton7);
+		
+		JButton Boton4 = new JButton("4");
+		Boton4.setBounds(108, 218, 89, 23);
+		contentPane.add(Boton4);
+		
+		JButton Boton2 = new JButton("2");
+		Boton2.setBounds(207, 252, 89, 23);
+		contentPane.add(Boton2);
+		
+		JButton Boton5 = new JButton("5");
+		Boton5.setBounds(207, 218, 89, 23);
+		contentPane.add(Boton5);
+		
+		JButton Boton8 = new JButton("8");
+		Boton8.setBounds(207, 185, 89, 23);
+		contentPane.add(Boton8);
+		
+		JButton Boton3 = new JButton("3");
+		Boton3.setBounds(306, 252, 89, 23);
+		contentPane.add(Boton3);
+		
+		JButton Boton6 = new JButton("6");
+		Boton6.setBounds(306, 218, 89, 23);
+		contentPane.add(Boton6);
+		
+		JButton Boton9 = new JButton("9");
+		Boton9.setBounds(306, 185, 89, 23);
+		contentPane.add(Boton9);
+		
+		JButton BotonMultiplicacion = new JButton("*");
+		BotonMultiplicacion.setBounds(405, 252, 60, 23);
+		contentPane.add(BotonMultiplicacion);
+		
+		JButton BotonMenos = new JButton("-");
+		BotonMenos.setBounds(405, 218, 60, 23);
+		contentPane.add(BotonMenos);
+		
+		JButton BotonMas = new JButton("+");
+		BotonMas.setBounds(405, 185, 60, 23);
+		contentPane.add(BotonMas);
+		
+		JButton BotonDivision = new JButton("/");
+		BotonDivision.setBounds(405, 285, 60, 23);
+		contentPane.add(BotonDivision);
+		
+		JButton BotonIgual = new JButton("=");
+		BotonIgual.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		BotonIgual.setBounds(207, 285, 188, 23);
+		contentPane.add(BotonIgual);
+		
+		JLabel lblNewLabel = new JLabel("20000000");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		lblNewLabel.setForeground(Color.RED);
+		lblNewLabel.setBounds(337, 120, 128, 29);
+		contentPane.add(lblNewLabel);
+	}
+}

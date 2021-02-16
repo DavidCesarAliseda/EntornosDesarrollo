@@ -1,0 +1,14 @@
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import examenUd5.Publicacion;
+
+public class PublicacionTest {
+
+	@Test
+	public void testPublicacion() {
+		Publicacion p1 = new Publicacion("l1", "l1");
+		assertTrue(p1 instanceof Publicacion);
+	}
+
+}
